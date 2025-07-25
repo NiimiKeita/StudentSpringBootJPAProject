@@ -102,7 +102,7 @@ public class StudentController {
         return mv;
     }
 
-    // 新規登録処理を行うメソッド
+    // 更新処理を行うメソッド
     // PATCHリクエストを受け取ることを指定する。また、メソッドがマッピングするURLの定義する。　      
     @PatchMapping("/update")
     public ModelAndView update(@ModelAttribute @Validated StudentData studentData, BindingResult result, ModelAndView mv) {
